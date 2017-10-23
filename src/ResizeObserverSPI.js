@@ -76,6 +76,7 @@ export default class ResizeObserverSPI {
             return;
         }
 
+        console.log(target.nodeType)
         if (!target.nodeType || target.nodeType !== Node.ELEMENT_NODE) {
             throw new TypeError('parameter 1 is not of type "Element".');
         }
